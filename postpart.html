@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Call</title>
+</head>
+
+<body>
+    <form id="form" method="post">
+
+        <label for="tag_id">tagid</label>
+        <input type="number" id="tagid" name="tagid" placeholder="tagid" /><br><br>
+        <label for="name">name</label>
+        <input type="text" id="name" name="name" placeholder="name" /><br><br>
+        <label for="vehicle_no">vehicle_no</label>
+        <input type="text" id="vehicle_no" name="vehicle_no" placeholder="vehicle_no" /><br><br>
+        <label for="material">material</label>
+        <input type="text" id="material" name="material" placeholder="material" /><br><br>
+        <label for="comapny_name">comapny_name</label>
+        <input type="name" id="comapny_name" name="comapny_name" placeholder="company_name" /><br><br>
+        <label for="company_contact">company_contact</label>
+        <input type="number" id="company_contact" name="company_contact" placeholder="company_contact" /><br><br>
+        <input type="submit" value="Add Todo" />
+        <button type="submit">Submit</button>
+        <button type="submit" formmethod="post">Submit using POST</button>
+
+
+    </form>
+</body>
+
+<script>
+    var form = document.getElementById('form')
+
+    form.addEventListener('submit', function (e) {
+        // auto submission of form
+        e.preventDefault()
+
+        var tagid = document.getElementById('tagid').value
+        var name = document.getElementById('name').value
+        var vehicle_no = document.getElementById('vehicle_no').value
+        var material = document.getElementById('material').value
+        var comapny_name = document.getElementById('comapny_name').value
+        var company_contact = document.getElementById('company_contact').value
+
+        //fetch post request
+
+
+
+
+
+
+        fetch("https://springbootdemoproject.herokuapp.com/post", {
+            method: 'POST',
+            body: JSON.stringify({
+                tagid: tagid,
+                name: name,
+                vehicle_no: vehicle_no,
+                material: material,
+                comapny_name: comapny_name,
+                company_contact: company_contact
+                
+            }),
+            headers: {
+                "Content-Type": "application/json; charset=UTF-8"
+            }
+
+
+        })
+            .then(function (response) {
+                return response.json()
+
+            })
+            .then(function (data) {
+                console.log(data)
+                // var results = document.getElementById('results')
+                // results.innerHTML=`<p>${data.material}</p>`
+
+                // <p> ${data.material}</p>
+                // <p> ${data.comapny_name}</p>
+                // <p> ${data.company_contact}</p>`
+
+            })
+
+
+    })
+
+
+
+</script>
+
+
+</html>

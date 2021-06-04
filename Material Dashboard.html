@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dashboard for Material Data</title>
+    <!-- Required meta tags -->
+    
+    
+    
+    <title>Dashboard for material Data</title>
+    <!-- Font Awesome-->
+
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link  rel="stylesheet" type="text/css" href="css/all.min.css">
+    <!-- Material Design Bootsrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles(optional)-->
+    <link href="css/styles.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+      <!-- Start your project here-->
+      <!-- navigation menu start -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+          <a href="#" class="navbar-brand text-warning">&nbsp; &nbsp;
+              <i class="fab fa-apple"></i> TURQOISE
+
+
+          </a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+              <span class="navbar-toggler-icon"></span>
+
+          </button>
+          <div class="collapse navbar-collapse" id="menu">
+              <ul class="navbar-nav list-inline">
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                          <i class="fas fa-chart-bar"></i> Dashboard
+
+                      </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-list-ul"></i> Vehicle
+
+                    
+                    </a>           
+
+                </li>
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <div class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                               <i class="fas fa-network-wired"></i> Material Category
+
+                            </a>
+                            
+                             <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Pie Chart</a>
+                                    <a href="#" class="dropdown-item">Bar Chart</a>
+                                    <a href="#" class="dropdown-item">Line Chart</a>
+                            </div>
+                        </div>
+
+                </ul>    
+
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-weight"></i> Weight
+
+                    </a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-users"></i> Users
+
+                    </a>
+
+                </li>
+                <ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fas fa-id-badge"></i>Info
+                                </a>
+                               <div class="dropdown-menu">
+                                   <a href="#" class="dropdown-item">Profile</a>
+                                   <a href="#" class="dropdown-item">Settings</a>
+                                   <a href="#" class="dropdown-item">Products</a>
+                                   <a href="#" class="dropdown-item">Contact us</a>
+
+                               </div> 
+                            </div>
+                            
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                    <i class="fas fa-sign-out-alt"></i> Logout
+            
+                            </a>    
+
+
+                </ul>
+                </ul>
+            </div>
+            
+
+
+
+      </nav>
+
+
+
+      <!-- navigation end here -->
+      
+    
+    <!-- dashboard heading start-->
+    <div class="text-white py-3" style="background-color:teal">
+        <h1>&nbsp; &nbsp; <i class="fas fa-chart-bar"></i> Material Dashboard</h1>
+
+    </div>
+    <div class="bg-li p-4">
+        <div class="row mx-4">
+            
+            <div class="col-md-1">
+                <a href ="#" class="btn btn-primary d-block"><i class="fas fa-plus"></i> Add Cotton</a>
+
+            </div>
+            <div class="col-md-1">
+                <a href ="#" class="btn btn-secondary d-block"><i class="fas fa-plus"></i>Add Sugarcane</a>
+
+            </div>
+            <div class="col-md-1">
+                <a href ="#" class="btn btn-warning d-block"><i class="fas fa-plus"></i> Add  Wheat</a>
+
+            </div>
+            <div class="col-md-1">
+                <a href ="#" class="btn btn-success d-block"><i class="fas fa-plus"></i> Add  Paddy </a>
+
+            </div>
+            <div class="col-md-1">
+                <a href ="#" class="btn btn-secondary d-block"><i class="fas fa-plus"></i> Add  Maize</a>
+
+            </div>
+            <div class="col-md-1">
+                <a href ="#" class="btn btn-warning d-block"><i class="fas fa-plus"></i> Add Potato</a>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <!-- dashboard heading end-->
+
+    <!-- dashboard content starts-->
+
+
+
+        <meta charset="UTF-8">
+        <title>DASHBOARD</title>
+        <style>
+
+           
+           .holder {
+               width: 400px;  
+                align-content: left;
+                }
+
+        </style>
+    </head>    
+    <body>
+        <div class="holder">
+            
+          <canvas id="myChart" ></canvas>
+        </div>
+
+
+
+        <div class="split left">
+            <div class=class="w3-padding w3-display-topleft">
+            
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+        <script>
+            var ctx = document.getElementById('myChart');
+            var myChart = new Chart(ctx, {
+               type: 'pie',
+               data: {
+               labels: ['COTTON', 'SUGARCANE', 'WHEAT', 'PADDY', 'MAIZE', 'POTATO'],
+               datasets: [{
+               label: '# of Votes',
+               data: [10000, 20000, 15000, 45000, 22500, 35000],
+               backgroundColor: [
+                'rgba(0, 99, 132, 0.2)',
+                'rgba(0, 162, 235, 0.2)',
+                'rgba(0, 206, 86, 0.2)',
+                'rgba(0, 192, 192, 0.2)',
+                'rgba(0, 102, 255, 0.2)',
+                'rgba(0, 159, 64, 0.2)'
+              ],
+              borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+              ],
+                borderWidth: 3
+              }]
+            },
+        options: {
+            scales: {
+                 yAxes: [{
+                    ticks: {
+                    beginAtZero: true
+                 }
+            }]
+        }
+        }
+    });
+    </script>
+    </div>
+    </div>
+    
+
+
+    <meta charset="UTF-8">
+        <title>DASHBOARD</title>
+        <style>
+
+           .holder {
+               width: 600px height: 600px border: 1px solid #c3c3c3;
+                  display: flex;
+                   flex-wrap: wrap;
+                     align-content: center;
+                }
+
+        </style>
+    </head>    
+    <body>
+        <div class="holder">
+            
+          <canvas id="myChart" ></canvas>
+        </div>
+        <div class="charts__right">
+            <div class="w3-padding w3-display-topright">
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+        <script>
+            var ctx = document.getElementById('myChart');
+            var myChart = new Chart(ctx,{
+               type: 'bar',
+               data: {
+               labels: ['COTTON', 'SUGARCANE', 'WHEAT', 'PADDY', 'MAIZE', 'POTATO'],
+               datasets: [{
+               label: '# of Votes',
+               data: [10000, 20000, 15000, 45000, 22500, 35000],
+               backgroundColor: [
+                'rgba(0, 99, 132, 0.2)',
+                'rgba(0, 162, 235, 0.2)',
+                'rgba(0, 206, 86, 0.2)',
+                'rgba(0, 192, 192, 0.2)',
+                'rgba(0, 102, 255, 0.2)',
+                'rgba(0, 159, 64, 0.2)'
+              ],
+              borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+              ],
+                borderWidth: 3
+              }]
+            },
+        options: {
+            scales: {
+                 yAxes: 15 [{
+                    ticks: {
+                    beginAtZero: true
+                 }
+            }]
+        }
+        }
+    });
+    </script>
+    
+    
+
+
+
+
+
+
+
+
+    </body>
+</html>    

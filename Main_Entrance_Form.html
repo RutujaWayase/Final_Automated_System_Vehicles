@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Entry Form </title>
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Doccure</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+
+    <style>
+        /*-----------------
+	19. Checkout
+-----------------------*/
+
+        
+        .info-widget {
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+         
+        }
+        
+        .card-label>label {
+            background-color: #fff;
+            
+            color: #959595;
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 500;
+            margin: 6px auto auto 8px;
+            padding: 0 7px;
+        }
+        
+        </style>
+
+</head>
+
+<body style="background-image: url(img/Background.jpg);">
+    
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper" style="width: 1200px;margin-top: 20px;margin-left: 300px;">
+        <!-- Page Content -->
+        <div class="content">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-7 col-lg-8">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <!-- Checkout Form -->
+                                <form action="https://dreamguys.co.in/demo/doccure/booking-success.html">
+
+                                    <!-- Personal Information -->
+                                    <div class="info-widget" style="margin-bottom: 10px;margin-top:-10px;">
+                                        <h4 class="card-title">Driver Information</h4>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="form-group card-label">
+                                                    <label>First Name</label>
+                                                    <input class="form-control" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="form-group card-label">
+                                                    <label>Last Name</label>
+                                                    <input class="form-control" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="form-group card-label">
+                                                    <label>Email</label>
+                                                    <input class="form-control" type="email">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="form-group card-label">
+                                                    <label>Phone</label>
+                                                    <input class="form-control" type="text" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                       <!----- <div class="exist-customer">Existing Customer? <a href="#">Click here to login</a></div> --->
+                                    </div>
+                                    <!-- /Personal Information -->
+
+                                    <div class="payment-widget">
+                                        <h4 class="card-title">Vehical Information</h4>
+                                         
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group card-label">
+                                                        <label for="card_name">Vehical Type</label>
+                                                       
+                                                        <select class="selectpicker" style="width: 300px;height: 35px;border-color: #C0C0C0;">
+                                                            <option>6 Wheel</option>
+                                                            <option>8 Wheel</option>
+                                                            <option>12 Wheel</option>
+                                                            <option>16 Wheel</option>
+                                                            <option>18 Wheel</option>
+                                                            <option>20 Wheel</option>
+                                                          </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group card-label">
+                                                        <label for="card_number">Vehical Number</label>
+                                                        <input class="form-control" id="card_number" placeholder="MH XX XX 0000" type="text">
+                                                    </div>
+                                                </div>
+
+                                         </div>
+                                         </div>
+
+                                         
+                                    <div class="payment-widget">
+                                        <h4 class="card-title">Company Information</h4>
+                                         
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group card-label">
+                                                        <label for="card_number">Comapny Name</label>
+                                                        <input class="form-control" id="card_number" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group card-label">
+                                                        <label for="card_name">Location</label>
+                                                       
+                                                        <select class="selectpicker" style="width: 300px;height: 35px;border-color: #C0C0C0;">                                                          
+                                                        
+                                                     <option> Andhra Pradesh </option> 
+                                                     <option> Assam           </option> 
+                                                     <option> Arunachal Pradesh</option> 
+                                                     <option> Bihar             </option> 
+                                                    <option> Goa              </option> 
+                                                    <option> Gujarat          </option>        
+                                                    <option> Jammu and Kashmir</option>           
+                                                    <option>  Jharkhand       </option>               
+                                                    <option>  West Bengal     </option>               
+                                                    <option>  Karnataka       </option>                
+                                                    <option>    Kerala        </option>                 
+                                                    <option>     Madhya Pradesh</option>              
+                                                    <option>     Maharashtra   </option>                  
+                                                    <option>         Manipur   </option>                  
+                                                    <option>    Meghalaya     </option>                      
+                                                    <option>      Mizoram     </option>                      
+                                                    <option>    Nagaland     </option>                         
+                                                    <option>     Orissa      </option>                         
+                                                    <option>      Punjab     </option>                         
+                                                    <option>      Rajasthan  </option>                         
+                                                    <option>       Sikkim    </option>                          
+                                                    <option>    Tamil Nadu  </option>                            
+                                                    <option>     Tripura    </option>                             
+                                                    <option>Uttaranchal     </option>                            
+                                                    <option>   Uttar Pradesh</option>                              
+                                                    <option>   Haryana     </option>                                 
+                                                    <option>Himachal Pradesh </option>                                 
+                                                    <option>     Chhattisgarh </option>                               
+                                                          </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group card-label">
+                                                        <label for="card_number">Row Material</label>
+                                                        <input class="form-control" id="card_number" type="text">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group card-label">
+                                                        <label for="card_number">Company Contact</label>
+                                                        <input class="form-control" id="card_number" type="text">
+                                                    </div>
+                                                </div>
+
+                                         </div>
+                                         </div>
+
+                                           <!-- Terms Accept -->
+                                        <div class="terms-accept">
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" id="terms_accept">
+                                                <label for="terms_accept">I have read and accept <a href="#">Terms &amp; Conditions</a></label>
+                                            </div>
+                                        </div>
+                                        <!-- /Terms Accept -->
+
+                                        <!-- Submit Section -->
+                                        <div class="submit-section mt-4">
+                                            <button type="submit" class="btn btn-primary submit-btn">Confirm and Submit</button>
+                                        </div>
+                                        <!-- /Submit Section -->
+                                        <i class="fas fa-star filled"></i>
+
+                                         
+
+                                    
+
+
+
+</body>
+</html>

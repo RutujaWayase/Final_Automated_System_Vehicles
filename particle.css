@@ -1,0 +1,36 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+.heading {
+
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("../images/Logo.png");
+    background-repeat: no-repeat;
+    background-position:center;
+    
+
+    background-size: 20% 20%;
+    
+  
+    
+    position: absolute;
+    text-align: center;
+    top: 0%;
+    width: 100%;
+}
+.heading h1 {
+    color: black;
+
+    column-rule-color: darkgray;
+    scrollbar-highlight-color: aqua;
+    font-size: 70px;
+}
+#particles-js {
+    background:lightcyan;
+    height: 1700vh;
+}
+.container{
+    background-color: #fff;
+    font-size: large;
+    border: green;
+}

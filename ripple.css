@@ -1,0 +1,15 @@
+body{
+    background-color: whitesmoke;
+}
+.ripple1{
+    width: 200px;
+    height: 200px;
+    background-color: #eeeeeeee;
+    border-radius: 50%;
+    box-shadow: 8px 8px 10px rgb(159, 211, 218),
+                -8px -8px 10px #ffffff;
+    position: absolute;
+    top: 95%;
+    left: 1%;
+    transform: translate(-50%, -50%);
+}

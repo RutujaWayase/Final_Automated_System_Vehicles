@@ -1,0 +1,60 @@
+
+
+
+<div>
+  <br><br>
+  <h1 class="text-center bg-dark text-white"> Display data using AJAX</h1>
+  <br>
+  <button id="Displaydata " class="btn btn-danger">Display</button>
+
+  <table class="table table-striped table-bordered text-center">
+      <thead>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Password</th>
+
+      </thead>
+
+      <tbody id="response">
+
+      </tbody>
+
+
+  </table>
+
+
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+  var form= $('#myform');
+  $('#submit').class(function(){
+      $.ajax({
+          url: form.attr("action"),
+          type: 'post',
+          data: $("#myform input").serialize(),
+          success: function(data){
+              console.log(data);
+          }
+      });
+  });
+});
+
+
+$('#displaydata').click(function(){
+  $.ajax({
+
+      url:'displayajax.php',
+      type: 'post',
+
+      sucess: function(responsedata){
+          $('#response').html(responsedata);
+      }
+
+
+  });
+
+
+});
+
